@@ -1,5 +1,6 @@
 package appewtc.masterung.ishihara;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.Menu;
@@ -21,6 +22,9 @@ public class ShowScoreActivity extends AppCompatActivity {
 
     public void clickPlay(View view) {
 
+        Intent objIntent = new Intent(ShowScoreActivity.this, MainActivity.class);
+        startActivity(objIntent);
+        finish();
     }
 
     public void clickExit(View view) {
